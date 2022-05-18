@@ -30,6 +30,7 @@ md"""
 
 A plasma is a **quasineutral** gas of charged and neutral particles which exhibits
 **collective** behavior.
+
 Requirements:
 - Size: $\lambda_D \ll L$
 - Density: $N_D \ggg 1$
@@ -49,9 +50,9 @@ Requirements:
 
 ## Collective
 
-Because of collective behavior, a plasma does not tend to conform to external influences; rather, it often behaves as if it had a mind of its own.
-
 ![Coulomb force](https://d3i71xaburhd42.cloudfront.net/cc02b06c3bb76450a1abad0d91b8d4f1ef5adfde/3-Figure1-1-1.png)
+
+Because of collective behavior, a plasma does not tend to conform to external influences; rather, it often behaves as if it had a mind of its own.
 
 Let $N_D$ be the number of particles in a Debye sphere, we require
 ```math
@@ -72,9 +73,9 @@ md"""
 ## Single Particle Motions
 
 - Plasmas behave sometimes like fluids, and sometimes like a collection of individual particles.
-- Having clear pictures of single particle motions helps in understanding plasma wave-particle interactions.
+- Wave-particle interactions
 
-`motion_type = ` $(@bind motion_type html"<select><option value='1'>First</option><option value='2'>Second</option><option value='3'>Third</option></select>")
+`motion_type = ` $(@bind motion_type html"<select><option value='1'>Electrons</option><option value='2'>Electron and ion</option><option value='3'>Ion in Earth-like dipole</option></select>")
 """
 
 # ╔═╡ 9d7d801b-fc49-43f2-a9c6-fcb058be7e90
@@ -163,7 +164,9 @@ md"## When Can We Obtain Simple Solutions?
 - Inhomogeneous --> $\nabla n \neq 0, \nabla B \neq 0$
 - Anisotropic --> $P_\perp \neq P_\parallel$
 
-Until a point where no analytic solution is possible, we use numerical models. However, it is often possible to understand a complex situation as a *modification* or *superposition* of these basic modes of oscillation.
+
+- No analytic solution is possible → **numerical models**.
+- Often possible to understand a complex situation as a *modification* or *superposition* of basic modes of oscillation.
 
 "
 
@@ -183,9 +186,8 @@ HTML("""<h2>ULF Waves in Earth's Magnetosphere</h2>
 # ╔═╡ c2e58f0b-02af-4d76-bd6b-9e81f998a053
 md"## Modelling
 ### Plasma Hierarchy
-For each particle species (e.g. electron + proton),
+![Plasma model classification](https://raw.githubusercontent.com/henry2004y/wave_workshop_helsinki/master/figures/plasma_model_classification.png)
 
-Fluids --> Particles --> Phase Space Distributions
 ### Vlasiator: Collisionless Hybrid Plasma Model
 - Electrons as massless fluid
 - Ions as phase space distribution functions"
@@ -206,9 +208,9 @@ Your browser does not support the video tag.
 
 # ╔═╡ 78980638-58a1-43b9-a7f4-7d0f3b1ff0d6
 md"
-## Future Perspects: Multi-Scale Coupling
+## Future Perspective: Multi-Scale Coupling
 [![batsrus_amr.gif](https://s8.gifyu.com/images/batsrus_amr.gif)](https://gifyu.com/image/SxbuH)
-## Future Perspects: Hierarchical Coupling
+## Future Perspective: Hierarchical Coupling
 ![Hierarchical coupling](https://www.frontiersin.org/files/Articles/396780/fphy-06-00113-HTML/image_m/fphy-06-00113-g001.jpg)
 "
 
