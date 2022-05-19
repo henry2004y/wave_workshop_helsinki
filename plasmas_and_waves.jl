@@ -26,7 +26,7 @@ html"<button onclick='present()'>present</button>"
 # ╔═╡ 65a9bcd2-d4f3-11ec-0cb0-ef5e13a5be35
 md"""
 # Ultra-Low Frequency Plasma Waves in Earth’s Magnetosphere
-# What is Plasma
+## What is Plasma
 
 A plasma is a **quasineutral** gas of charged and neutral particles which exhibits
 **collective** behavior.
@@ -38,12 +38,16 @@ Requirements:
 
 ## Quasineutral
 
-- $n_i\simeq n_e \simeq n$ where n is plasma density
+- $n_i\simeq n_e \simeq n,\quad \text{n: plasma density}$
 - Not so neutral that all the interesting electromagnetic forces vanish.
 - A fundamental characteristic of plasma is its ability to shield out external electric potentials.
 
 ```math
 \lambda_D \equiv \sqrt{\frac{\epsilon k_B T_e}{ne^2}} \ll L
+```
+
+```math
+N_D \ggg 1
 ```
 
 ![Debye shielding](https://cds.cern.ch/record/2203630/files/Debye_probes.png)
@@ -52,20 +56,13 @@ Requirements:
 
 ![Coulomb force](https://d3i71xaburhd42.cloudfront.net/cc02b06c3bb76450a1abad0d91b8d4f1ef5adfde/3-Figure1-1-1.png)
 
-Because of collective behavior, a plasma does not tend to conform to external influences; rather, it often behaves as if it had a mind of its own.
-
-Let $N_D$ be the number of particles in a Debye sphere, we require
-```math
-N_D \ggg 1
-```
+- Motions depend not only on local conditions, but on the state of the plasma in remote regions as well.
+- Because of collective behavior, a plasma does not tend to conform to external influences; rather, it often behaves as if it had a mind of its own.
 
 ## Collisionless
 
-If $\omega$ is the frequency of typical plasma oscillations and $\tau$ is the mean time between collisions with neutral atoms, we require
-
-```math
-\omega \tau > 1
-```
+- Deviation from ordinary fluids
+- EM forces much more important than collisions
 """
 
 # ╔═╡ 2ea7aaac-ec4b-43c5-a9aa-2c4e6450205c
@@ -135,7 +132,7 @@ where
 # ╔═╡ 4bbec8e0-9ff0-471f-b003-899a68452bb3
 md"""
 ## Basic Wave Modes
-`wave_type = ` $(@bind wave_type html"<select><option value='1'>Plasma oscillation</option><option value='2'>Lower hybrid drift wave</option><option value='3'>Whistler wave</option><option value='4'>Alfvén wave</option><option value='5'>Fast Magnetosonic wave</option></select>")
+`wave_type = ` $(@bind wave_type html"<select><option value='1'>Plasma oscillation</option><option value='2'>Lower hybrid drift wave</option><option value='3'>Whistler wave</option><option value='4'>Alfvén wave</option><option value='5'>Magnetosonic wave</option></select>")
 """
 
 # ╔═╡ e26bcb3e-6e94-44c8-9700-dfc194090004
