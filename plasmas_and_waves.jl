@@ -26,6 +26,8 @@ html"<button onclick='present()'>present</button>"
 # ╔═╡ 65a9bcd2-d4f3-11ec-0cb0-ef5e13a5be35
 md"""
 # Ultra-Low Frequency Plasma Waves in Earth’s Magnetosphere
+### Hongyang Zhou, University of Helsinki
+#### Wave Physics and Imaging Applications Workshop, Helsinki, 2022
 ## What is Plasma
 
 A plasma is a **quasineutral** gas of charged and neutral particles which exhibits
